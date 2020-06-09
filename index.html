@@ -1,111 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
+<html>
+  
+<head>
+  <title>Walid Amriou</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Lokum GoLang is Website to learn Go by example programs">
+  <meta name="author" content="WalidAmriou">
 
-		<title>Walid Amriou</title>
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="author" content="Erilisdesign.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_buttons.css">
+  <link rel="icon" href="img/Logo.jpg" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="material_design/material.min.css">
+  
 
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" href="assets/css/utilities.css">
+  <script src="material_design/material.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 
-		<link rel="stylesheet" href="assets/css/custom.css">
 
-		<link rel="stylesheet" href="assets/css/jquery.fullpage.min.css" type="text/css">
-		<link rel="stylesheet" href="assets/css/slick.min.css" type="text/css">
-		<link rel="stylesheet" href="assets/css/vegas.min.css" type="text/css">
-		<link rel="stylesheet" href="assets/css/fontawesome/all.min.css" type="text/css">
-		<link rel="stylesheet" href="assets/css/themify-icons.css" type="text/css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6,p,a {
+      font-family: monospace, sans-serif
+    }
 
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700%7CMRoboto:300,400,500,700" rel="stylesheet">
+    body,
+    html {
+      color: #212121;
+      background-color: #FAFAFA
+    }
+    @media (min-width:600px){
+      .mdl-list {
+        padding-left: 30%;
+      }
+    }
 
-		<link rel="shortcut icon" href="assets/images/favicon.ico">
+    @media (max-width:700px){
+      .mdl-list {
+        padding-left: 10%;
+      }
+    }
 
-	</head>
-	<body>
+    .bgimg {
+      background-image: url('img/matrix.svg');
+      min-height: 100%;
+      background-repeat: repeat;
+      background-position: center;
+      background-size: cover;
+    }
 
-		<div id="preloader" class="preloader preloader-dark">
-			<div class="loader-status">
-				<div class="circle-side"></div>
-			</div>
-		</div>
+    mark {
+      background-color: #94ebee;
+      color: black;
+    }
 
-		<!-- Global Overlay -->
-		<div class="global-overlay">
-			<div class="overlay-inner bg-image-holder bg-cover bg-center-right">
-				<img src="demo/images/image-1.jpg" alt="background">
-			</div>
-			<div class="overlay-inner bg-white opacity-90"></div>
-			<div class="overlay-inner shadow-inner-white-1 opacity-85"></div>
-			<div class="overlay-inner shadow-inner-white-2 opacity-85"></div>
-		</div>
+    #your_new_password_text {
+      color: red;
+    }
+    .mdl-ceckbox{
+      width: 10%;
+    }
+    .mdl-list__item{
+      min-height:65px;
+    }
+  </style>
+</head>
 
-		<!-- Frame -->
-		<div class="frame bg-dark d-none d-lg-block">
-			<div class="frame-left"></div>
-			<div class="frame-right"></div>
-			<div class="frame-top"></div>
-			<div class="frame-bottom"></div>
-		</div>
+<body style="color: #212121;">
+  
+  <div class="devfast-display-container devfast-animate-opacity devfast-text-white">
+    <div class="devfast-display-topleft devfast-padding-large devfast-xlarge" style="margin: 10px">
+    </div>
 
-		<div class="site-container">
+    <div class="devfast-display-topright devfast-padding-large devfast-xlarge" style="margin: 10px">
+    </div>
 
-			<!-- Site Header -->
-			<header class="site-header header-fixed d-flex justify-content-center">
-				<!-- Logo -->
-				<a href="#" class="logo">
-					<!-- <img src="assets/images/logo-dark.png" alt=""> -->
-				</a>
-			</header>
+    <br>
+    <center>
+      <div class="devfast-display-middle">
+        <h5 class="devfast-jumbo devfast-animate-top"></h5>
+        <h4 stylecolor="#212121">
+          <b>Walid Amriou</b></h4>
 
-			<section id="404" class="d-flex min-vh--100">
-				<div class="container align-self-center text-center">
-					<h6 class="display--1 mb-3">Walid Amriou</h6>
-					<p class="h3 mb-5">Embedded systems & software developer</p>
-					<a href="https://drive.google.com/open?id=1K0YNyagCCj6a9CQH13N9-nPb55P8Y4hh" target="_blank" class="btn btn-primary btn-shadow rounded-0">resume <i class="fas fa-file-pdf"></i></a>
-				</div>
-			</section>
+        <h5>
+          Embedded Systems Engineer | Software developer | Frontend developer <br>
+          </span></h5>
 
-			<!-- Site Footer -->
-			<footer class="site-footer footer-fixed footer-mobile-dark footer-dark">
-				<div class="container-fluid d-md-flex align-items-md-center justify-content-md-between">
-					<nav class="social-nav social-nav-pinned">
-						<ul>
-							<li><a href="https://www.facebook.com/walidamriou" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="https://twitter.com/walidamriou" target="_blank"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="https://github.com/walidamriou" target="_blank"><i class="fab fa-github"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/walidamriou/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-						</ul>
-					</nav>
-					<p class="mb-2 mb-xl-0">© 2020 Walid Amriou - All Rights Reserved</p>
-					<nav class="usefull-nav">
-						<ul>
-							<li><a href="http://walidamriou.com/notes/" target="_blank">Notes & blog</a></li>
-							<li><a href="/">Projects</a></li>
-						</ul>
-					</nav>
-				</div>
-			</footer>
+        </b>
+      </b>
 
-		</div>
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          style="border-radius:13px;background-color:#3f51b5"
+          onclick=" window.open('/','_blank')"
+          >
+          About Me
+        </button>
 
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.easing.min.js"></script>
-		<script src="assets/js/bootstrap.bundle.min.js"></script>
-		<script src="assets/js/jquery.validate.min.js"></script>
-		<script src="assets/js/jquery.form.min.js"></script>
-		<script src="assets/js/jquery.countdown.min.js"></script>
-		<script src="assets/js/granim.min.js"></script>
-		<script src="assets/js/slick.min.js"></script>
-		<script src="assets/js/vegas.min.js"></script>
-		<script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+        <button
+        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+        style="border-radius:13px;background-color:#795548"
+        onclick=" window.open('/','_blank')"
+        >
+        My Projects
+        </button>
 
-		<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <img src="img/anim.png" alt="GDG" style="max-width: 50%;"">
+      </div>
+    </center>
+    <div class=" devfast-display-bottomleft devfast-padding-large">
+      </div>
+  </div>
+
+  <footer class="mdl-mega-footer">
+    <div class="mdl-mega-footer__middle-section">
+
+      <div class="mdl-mega-footer__drop-down-section">
+        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <h1 class="mdl-mega-footer__heading">About Me</h1>
+        <ul class="mdl-mega-footer__link-list">
+          <li><a href="/">My experience</a></li>
+          <li><a href="/" target="_blank">My projects</a> </li>
+        </ul>
+      </div>
+
+      <div class="mdl-mega-footer__drop-down-section">
+        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <h1 class="mdl-mega-footer__heading">Contact Me</h1>
+        <ul class="mdl-mega-footer__link-list">
+          <li><a href="https://www.walidamriou.com" target="_blank">Linkedin @walidamriou</a></li>
+          <li><a href="https://github.com/walidamriou" target="_blank">GitHub @walidamriou</a></li>
+          <li><a href="https://twitter.com/walidamriou" target="_blank">Twitter @walidamriou</a></li>
+        </ul>
+      </div>
+
+      <div class="mdl-mega-footer__drop-down-section">
+        <h1 class="mdl-mega-footer__heading">Quick links</h1>
+        <ul class="mdl-mega-footer__link-list">
+          <li><a href="/" target="_blank"></a></li>
+        </ul>
+      </div>
+
+      <div class="mdl-mega-footer__drop-down-section">
+        <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+        <h1 class="mdl-mega-footer__heading">Walid Amriou</h1>
+        Embedded Systems Engineer, Software developer and Frontend developer
+      </div>
+    </div>
+
+
+    <div class="mdl-mega-footer__bottom-section">
+      <div class="mdl-logo">Walid Amriou website</div>
+      made by Walid Amriou 2020
+    </div>
+
+  </footer>
+</body>
