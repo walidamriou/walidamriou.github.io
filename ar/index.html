@@ -76,6 +76,11 @@
     .mdl-list__item {
       min-height: 65px;
     }
+    .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+}
   </style>
 </head>
 
@@ -118,11 +123,16 @@
                 
               </h5>
               </br>
-              <img src="../img/logos/mozilla.jpg" alt="GDG" style="max-width: 20%;">
-              <img src="../img/logos/brandt.png" alt="GDG" style="max-width: 20%;">
-              <img src="../img/logos/gdg.png" alt="GDG" style="max-width: 20%;">
-              <img src="../img/logos/samha.jpg" alt="GDG" style="max-width: 20%;">
+
+              <div class="grid">
+                <div><img src="../img/logos/mozilla.svg" alt="GDG" style="max-width: 80%;"></div>
+                <div><img src="../img/logos/Cevital.svg" alt="GDG" style="max-width: 80%;"></div>
+                <div><img src="../img/logos/brandt.svg" alt="GDG" style="max-width: 90%;"></div>
+                <div><img src="../img/logos/gdg-google-developer-group.svg" alt="GDG" style="max-width: 80%;"></div>
+              </div>
+
             </div>
+
             <br><br><br><br>
           </div>
         </center>
