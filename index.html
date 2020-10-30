@@ -75,6 +75,25 @@
     .mdl-list__item {
       min-height: 65px;
     }
+
+    .logo-wrapper {
+    height:200px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    border:solid 1px #eee;
+}
+
+.logo-wrapper img {
+    max-height:100px;
+    max-width:100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+}
   </style>
 </head>
 
@@ -120,16 +139,21 @@
                 Groupe Brandt as an Embedded System Engineer
               </h5>
               </br>
-              <img src="img/logos/mozilla.jpg" alt="GDG" style="max-width: 20%;">
-              <img src="img/logos/brandt.png" alt="GDG" style="max-width: 20%;">
-              <img src="img/logos/gdg.png" alt="GDG" style="max-width: 20%;">
-              <img src="img/logos/samha.jpg" alt="GDG" style="max-width: 20%;">
+
+              <div class="grid">
+                <div><img src="img/logos/mozilla.svg" alt="GDG" style="max-width: 80%;"></div>
+                <div><img src="img/logos/Cevital.svg" alt="GDG" style="max-width: 80%;"></div>
+                <div><img src="img/logos/brandt.svg" alt="GDG" style="max-width: 90%;"></div>
+                <div><img src="img/logos/gdg-google-developer-group.svg" alt="GDG" style="max-width: 80%;"></div>
+              </div>
+
             </div>
             <br><br><br><br>
           </div>
         </center>
   </div>
 
+  
 
   <div class=" devfast-display-container devfast-animate-opacity devfast-text-white"
   style="background-color:#0060df ;">
