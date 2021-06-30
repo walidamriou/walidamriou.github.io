@@ -1,450 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <title>Walid Amriou</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Walid Amriou Website">
-  <meta name="author" content="WalidAmriou">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style_buttons.css">
-  <link rel="icon" href="assets/icon/favicon.ico" sizes="16x16">
-  <link rel="stylesheet" href="material_design/material.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/SocialMediaButtons/fontawesome-free-5.15.2-web/css/all.css">
-  <script src="material_design/material.min.js"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+        <title>Walid Amriou</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Walid Amriou</a>
+                </div>
 
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    a {
-      font-family: 'Martel Sans', sans-serif
-    }
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Embedded Systems Engineer <br> Software developer</h1>
+                </div>
 
-    body,
-    html {
-      color: #212121;
-      background-color: #FAFAFA
-    }
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/walidamriou/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/walidamriou" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
 
-    @media (min-width:600px) {
-      .mdl-list {
-        padding-left: 30%;
-      }
-    }
+                <div class="home__img">    
+                    <!--<img src="assets/img/perfil.png" alt="">-->
+                </div>
+            </section>
 
-    @media (max-width:700px) {
-      .mdl-list {
-        padding-left: 10%;
-      }
-    }
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
 
-    .bgimg {
-      background-image: url('img/matrix.svg');
-      min-height: 100%;
-      background-repeat: repeat;
-      background-position: center;
-      background-size: cover;
-    }
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/profile.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Walid</h2>
+                        <p class="about__text">
+                            I am an Embedded systems Engineer and Software developer with 3+ years of experience. 
+                            I have a Master degree in Embedded systems and a Bachelor degree in Electronics. 
+                            I won several local awards in software development. 
+                            I have been an active contributor with Mozilla, Mozilla Algeria, 
+                            and Google Developers Group M'sila (GDG M’sila). 
+                            I am working for Groupe Brandt as an Embedded System Engineer.
+                        </p>           
+                    </div>                                   
+                </div>
+            </section>
 
-    mark {
-      background-color: #94ebee;
-      color: black;
-    }
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="resume">
+                <h2 class="section-title">Resume</h2>
 
-    #your_new_password_text {
-      color: red;
-    }
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Open for New challenges, for the future of the world!</h2>
+                        <p class="skills__text">
+                            I have a passion for creating products, projects, and open source projects that help create the future of the world.
+                        </p>
+                        <div class="skills__data">
+                            <a href="https://drive.google.com/file/d/1Li6cTPymfRwSgJodLNxD42DBS5nMshmY/view?usp=sharing" rel="nofollow" target="_blank" class="button">view Resume</a>
 
-    .mdl-ceckbox {
-      width: 10%;
-    }
+                        </div>
+                    </div>
+                    
+                    <div>              
+<!-- image here-->
+<center><img src="assets/img/future2.png" style="width: 80%;text-align: center;" alt=""></center>
 
-    .mdl-list__item {
-      min-height: 65px;
-    }
+                    </div>
+                </div>
+            </section>
 
-    .logo-wrapper {
-      height: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      border: solid 1px #eee;
-    }
+            <!--===== WORK =====-->
+            <section class="work section" id="projects">
+                <h2 class="section-title">Projects</h2>
 
-    .logo-wrapper img {
-      max-height: 100px;
-      max-width: 100%;
-    }
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <a href="https://www.walidamriou.com/walidamriou/" rel="nofollow" target="_blank"><img src="assets/img/work1.jpg" alt=""></a>
+                    </div>
+                    <!--
+                    <div class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </div>
+                    -->
+                </div>
+            </section>
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      grid-gap: 2rem;
-    }
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
 
+                <div class="contact__container bd-grid">
+  Email: contact [at] walidamriou [dot] com
+                </div>
+            </section>
+        </main>
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .wrapper {
-      display: inline-flex;
-    }
-
-    .wrapper .icon {
-      margin: 0 20px;
-      text-align: center;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      position: relative;
-      z-index: 2;
-      transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-    .wrapper .icon span {
-      display: block;
-      height: 60px;
-      width: 60px;
-      background: #fff;
-      border-radius: 50%;
-      position: relative;
-      z-index: 2;
-      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-      transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-    .wrapper .icon span i {
-      line-height: 60px;
-      font-size: 25px;
-    }
-
-    .wrapper .icon .tooltip {
-      position: absolute;
-      top: 0;
-      z-index: 1;
-      background: #fff;
-      color: #fff;
-      padding: 10px 18px;
-      font-size: 20px;
-      font-weight: 500;
-      border-radius: 25px;
-      opacity: 0;
-      pointer-events: none;
-      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-      transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-    .wrapper .icon:hover .tooltip {
-      top: -70px;
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .icon .tooltip:before {
-      position: absolute;
-      content: "";
-      height: 15px;
-      width: 15px;
-      background: #fff;
-      left: 50%;
-      bottom: -6px;
-      transform: translateX(-50%) rotate(45deg);
-      transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-
-    .wrapper .icon:hover span {
-      color: #fff;
-    }
-
-    .wrapper .icon:hover span,
-    .wrapper .icon:hover .tooltip {
-      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
-    }
-
-    .wrapper .facebook:hover span,
-    .wrapper .facebook:hover .tooltip,
-    .wrapper .facebook:hover .tooltip:before {
-      background: #3B5999;
-    }
-
-    .wrapper .twitter:hover span,
-    .wrapper .twitter:hover .tooltip,
-    .wrapper .twitter:hover .tooltip:before {
-      background: #46C1F6;
-    }
-
-    .wrapper .instagram:hover span,
-    .wrapper .instagram:hover .tooltip,
-    .wrapper .instagram:hover .tooltip:before {
-      background: #e1306c;
-    }
-
-    .wrapper .github:hover span,
-    .wrapper .github:hover .tooltip,
-    .wrapper .github:hover .tooltip:before {
-      background: #333;
-    }
-
-    .wrapper .youtube:hover span,
-    .wrapper .youtube:hover .tooltip,
-    .wrapper .youtube:hover .tooltip:before {
-      background: #DE463B;
-    }
-
-    .wrapper .linkedin:hover span,
-    .wrapper .linkedin:hover .tooltip,
-    .wrapper .linkedin:hover .tooltip:before {
-      background: #3B5999;
-    }
-
-    .fa-twitter{
-      color:#0c0c0d
-    }
-    .fa-twitter:hover{
-      color:#fff
-    }
-    .fa-instagram{
-      color:#0c0c0d
-    }
-    .fa-instagram:hover{
-      color:#fff
-    }
-    .fa-youtube{
-      color:#0c0c0d
-    }
-    .fa-youtube:hover{
-      color:#fff
-    }
-    
-    
-
-
-    
-    
-  </style>
-</head>
-
-<body style="color: #212121;">
-
-  <div class="devfast-display-container devfast-animate-opacity devfast-text-white" style="background-color:#ededf0 ;">
-
-<!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v10.0'
-          });
-        };
-
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-      </script>
-
-      <!-- Your Chat plugin code -->
-      <div class="fb-customerchat"
-        attribution="page_inbox"
-        page_id="148145772217906">
-      </div>
-
-    <center>
-      <div class="devfast-display-middle" style="background-color:#ededf0 ;">
-        <h4 stylecolor="#212121">
-          <br>
-          <b>Walid Amriou</b></h4>
-
-        <h5>
-          Embedded Systems Engineer | Software developer | Frontend developer <br>
-          </span></h5>
-
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <img src="img/anim.png" alt="GDG" style="max-width: 50%;"">
-      </div>
-    </center>
-  </div>
-  <br>    <br>    <br>
-
-  <div class=" devfast-display-container devfast-animate-opacity devfast-text-white">
-        <br>
-        <center>
-          <div class="devfast-display-middle">
-            <h4 style="color: #212121;font-family: 'Martel Sans', sans-serif;"><b>About Me</b></h4>
-            <div
-              style="margin-left: 10%;margin-right: 10%;color: #212121;font-family: 'Martel Sans', sans-serif;  line-height: 200%;">
-              <h5>
-                I am an Embedded systems Engineer and Software developer
-                with 3+ years of experience. I have a Master degree in
-                Embedded systems and a Bachelor degree in Electronics. I won
-                several local awards in software development. I have been an
-                active contributor with Mozilla, Mozilla Algeria, and Google
-                Developers Group M'sila (GDG M’sila).
-                I am working for
-                Groupe Brandt as an Embedded System Engineer
-              </h5>
-              </br>
-
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Walid Amriou</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/walidamriou/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/walidamriou" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
             </div>
-            <br><br><br><br>
-          </div>
-        </center>
-      </div>
+            <!--<p> walidamriou &#169; 2021</p>-->
+        </footer>
 
 
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-      <div class=" devfast-display-container devfast-animate-opacity devfast-text-white"
-        style="background-color:#c4e6ff  ;">
-        <br>
-        <center>
-          <div class="devfast-display-middle">
-            <h4 style="color: #0c0c0d;font-family: 'Martel Sans', sans-serif;"><b>Projects</b></h4>
-            <div style="margin-left: 10%;margin-right: 10%;color: #0c0c0d;font-family: 'Martel Sans', sans-serif;  line-height: 200%;">
-              <h5>
-                I have a passion for creating products & open source projects that help create the future of the world
-
-              </h5>
-              </br>
-
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-                style="border-radius:13px;background-color:#2e7dfb;color: black;"
-                onclick=" window.open('https://www.walidamriou.com/walidamriou/','_blank')">
-                all Projects
-              </button>
-
-            </div>
-            <br><br><br><br>
-          </div>
-        </center>
-      </div>
-
-
-      <div class=" devfast-display-container devfast-animate-opacity devfast-text-white"
-        style="background-color:#fff ;">
-        <br>
-        <center>
-          <div class="devfast-display-middle">
-            <h4 style="color: #212121;font-family: 'Martel Sans', sans-serif;"><b>My Blogs</b></h4>
-            <h5>Since 2014, I have written to the world about technology, science, art, and humanity</h5>
-            <div
-              style="margin-left: 10%;margin-right: 10%;color: #212121;font-family: 'Martel Sans', sans-serif;  line-height: 200%;">
-              <h5>
-                </br>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-                  style="border-radius:13px;background-color:#0c0c0d;color: #ededf0;"
-                  onclick=" window.open('https://notes.walidamriou.com','_blank')">
-                  WalidNotes
-                </button>
-
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-                  style="border-radius:13px;background-color:#150077;color: #ededf0;"
-                  onclick=" window.open('https://molahadat.walidamriou.com','_blank')">
-                  Molahadat ملاحظات
-                </button>
-
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-                style="border-radius:13px;background-color:#f8c208;color: #333;"
-                onclick=" window.open('https://blog.walidamriou.com','_blank')">
-                Old Blog
-              </button>
-
-              </h5>
-              </br>
-
-            </div>
-            <br><br>
-          </div>
-        </center>
-      </div>
-
-
-
-      <div class=" devfast-display-container devfast-animate-opacity devfast-text-white"
-        style="background-color:#ededf0 ;">
-        <br>
-        <center>
-          <div class="devfast-display-middle">
-            <h4 style="color: #212121;font-family: 'Martel Sans', sans-serif;"><b>Be part of my network</b></h4>
-            <div
-              style="margin-left: 10%;margin-right: 10%;color: #212121;font-family: 'Martel Sans', sans-serif;  line-height: 200%;">
-
-              <div class="wrapper">
-                <!-- a href="your link here" target="_blank" class="icon facebook" div class="tooltip" Facebook div span i class="fab fa-facebook-f" i span a-->
-                <div class="icon facebook">
-                  <div class="tooltip">
-                    Facebook</div>
-                  <span><i class="fab fa-facebook-f"></i></span>
-                </div>
-                <div class="icon twitter">
-                  <div class="tooltip">
-                    Twitter</div>
-                  <span><i class="fab fa-twitter"></i></span>
-                </div>
-                <div class="icon instagram">
-                  <div class="tooltip">
-                    Instagram</div>
-                  <span><i class="fab fa-instagram"></i></span>
-                </div>
-                <div class="icon github">
-                  <div class="tooltip">
-                    Github</div>
-                  <span><i class="fab fa-github"></i></span>
-                </div>
-
-                <div class="icon youtube">
-                  <div class="tooltip">
-                    YouTube</div>
-                  <span><i class="fab fa-youtube"></i></span>
-                </div>
-              </div>
-
-            </div>
-            <br><br><br><br>
-          </div>
-        </center>
-      </div>
-
-
-      <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer__right-section">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            style="border-radius:13px;background-color:#212121;color:#eee ;margin-right: 10px;" 
-            onclick=" window.open('https://www.walidamriou.com/ar/')">
-            العربية
-          </button>
-          </div>
-          <div class="mdl-mega-footer__bottom-section">
-            <div class="mdl-logo">Walid Amriou © 2021</div>
-          </div>
-
-      </footer>
-</body>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
