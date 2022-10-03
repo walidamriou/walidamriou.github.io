@@ -1,109 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
+    <!-- META -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>walidamriou</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <div id="loading">
-        <div id="spinner"></div>
-    </div>
-    <div id="particles-js"></div>
-    <div id="box">
-        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
-        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
-        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
-        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
-        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
-        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
-    </div>
-    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
-    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
-    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
-    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
-        <h1>Walid Amriou</h1>
-        <h2>Embedded systems Engineer & Software developer</h2>
-        <div id="menu">
-            <a onclick="showabout()">about</a>
-            <a onclick="showwork()">work</a>
-            <a onclick="showcontact()">contact</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Walid Amriou Website">
+    <meta name="author" content="walidamriou">
+    <meta name="referrer" content="unsafe-url">
+    <meta name="robots" content="index, follow">
+    <!-- SPEED -->
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="dns-prefetch" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- LINK -->
+    <link rel="me" href="#">
+    <link rel="canonical" href="#">
+    <link rel="icon" type="image/png" href="#" sizes="48x48">
+    <!-- PERFORMANCE -->
+    <link rel="preload" as="style" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- TITLE -->
+    <title>Walid Amriou</title>
+  </head>
+
+  <body>
+    <header role="banner" class="ui-section-header" style="background-color: #d1f4f7;">
+      <div class="ui-layout-container">
+        <div class="ui-section-header__layout ui-layout-flex">
+          <!-- LOGO -->
+          <a href="#" role="link" aria-label="#">
+
+          </a>
+          
+          <!-- MENU -->
+          <a href="#contact" role="link" aria-label="#" class="ui-component-button ui-component-button-small ui-component-button-primary">
+            Contact
+          </a>
         </div>
-        <table>
-                <tr>
-                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
-                </tr>
-        </table>
-    </div>
-    <div id="work_container" class="container">
-        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
-        <h1>works.</h1>
-        <section>
-            <h2>work title</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <div id="used">
-                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
-                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
-                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="ui-section-hero" style="background-color: #d1f4f7;
+opacity: 0.8;
+background-size: 20px 20px;
+background-position: 0 0,10px 10px;
+      ">
+        <div class="ui-layout-container">
+          <div class="ui-layout-column-6 ui-layout-column-center">
+            <h1 style="color: #171717;">WALID AMRIOU</h1>
+            <p class="ui-text-intro" style="font-size:large;color: #1b1a1b;">Embedded systems Engineer & Software developer</p>
+            <div class=" ui-layout-flex" style="white-space: nowrap; ">
+           
             </div>
-            <button class="btn_one">button 1</button>
-            <button class="btn_two">button 2</button>
-        </section>
-    </div>
-    <div id="about_container" class="container">
-            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-            <h1>about</h1>
-            <section>
-                <h2>about me</h2>
-                <p>
-                  Embedded systems Engineer and Software developer with 4+ years of experience. Master's degree in Embedded systems and a Bachelor's degree in Electronics. Won several local awards in software development. Active contributor with Mozilla, Mozilla Algeria, and Google Developers Group M'sila (GDG M’sila). I worked for Groupe Brandt as an Embedded System Engineer. Now, I am working for Solarnative gmbh as Software Developer Playing on violin as a hobby. 
-                </p>
-                <p>
-                </p>
-            </section>
-            <section>
-                <h2>skills</h2>
-                <p>
-                  I like to combine technology, science, and art to create amazing products.<br>
-                  - Design Embedded Software and Hardware <br>
-                  - Develop Software solutions (C, JS, NodeJS, Java, etc)<br>
-                  - Programming microcontrollers (ESP32/ESP8266, Renesas, Atmega, STM32, etc)<br>
-                  - Web design and development (HTML, CSS, JS, NodeJS, etc)<br>
-                  - Design & Documentation<br>
-                </p>
-            </section>
+
+          </div>
+
         </div>
-          <div id="contact_container" class="container">
-            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-            <h1>contact.</h1>
-            <section>
-                <h2>contact me</h2>
-                <p>
-                    <form>
-                        <input type="text" placeholder="name" required>
-                        <input type="email" placeholder="email" required><br>
-                        <textarea placeholder="your message" required rows="5"></textarea><br>
-                        <button class="btn_one">send</button>
-                    </form> 
+      </section>
+
+      
+      <section class="ui-section-customer" style="background-color: #d7f9fc;">
+        <div class="ui-layout-container">
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
+            <!-- IMAGE -->
+            <img src="assets/img/pic3.png" loading="lazy" alt="#" class="ui-image-half-left">
+            <!-- FEATURE -->
+            <div>
+            </br>
+          </br>
+              <h2 style="color: #393738;">About</h2>
+              <p class="ui-text-intro" style="color: #393738;"> 
+                Embedded systems Engineer and Software developer with 4+ years of experience. 
+                I have Master's degree in Embedded systems and a Bachelor's degree in Electronics. 
+                I like to combine technology, science, and art to create amazing products.
+                I am working for Solarnative GmbH as Software Developer.
                 </p>
-            </section>
+              </br></br></br>
+            </div>
+          </div>
         </div>
-        <div id="footer">
-            walidamriou 2023 
+      </section>
+       
+      <section id="about" class="ui-section-feature" style="background-color: #CAFAFE;color: #393738;">
+        <div class="ui-layout-container">
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
+            <div>
+              <h2 style="color: #1b1a1b;">Skills</h2>
+              <p class="ui-text-intro">Combining technology, science, and art to create amazing products.</p>
+              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
+                <li class="ui-component-list--item ui-component-list--item-check" style="color: #1b1a1b;">Design Embedded Software and Hardware</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Programming microcontrollers (ESP32/ESP8266, Renesas, Atmega, STM32, etc)</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Develop Software solutions (C, JS, NodeJS, Java, etc)</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Web design and development (HTML, CSS, JS, NodeJS, etc)</li>
+                <li class="ui-component-list--item ui-component-list--item-check">Design & Documentation</li>
+
+              </ul>
+            </div>
+            <img src="assets/img/pic2.jpeg" loading="lazy" alt="#" class="ui-image-half-right">
+          </div>
+          </div>
         </div>
-    <script src="index.js" type="text/javascript"></script>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
-</body>
+      </section>
+
+
+      <section class="ui-section-customer" style="background-color: #d7f9fc;">
+        <div class="ui-layout-container">
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
+
+            <h1>Blog</h1>
+            <!-- IMAGE 
+            <img src="assets/img/pic3.png" loading="lazy" alt="#" class="ui-image-half-left">
+             FEATURE -->
+            <div>
+            </br>
+          </br>
+              <h2 style="color: #393738;"></h2>
+              <p class="ui-text-intro" style="color: #393738;"> 
+                I am writing about Technology, Science, Arts, my philosophies, and more subjects in <b>WALID NOTES</b>   
+                </p>
+              </br></br></br>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="contact" class="ui-section-close" style="background-color: #d8f3f2;">
+        <div class="ui-layout-container">
+          <div class="ui-layout-column-6 ui-layout-column-center" style="padding-bottom: 100px;">
+          </br><h2>Contact</h2>
+            <div class=" ui-layout-flex" style="white-space: nowrap; ">
+              <a href="https://github.com/walidamriou" target=”_blank” role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary" style="margin: 10px;">
+                <i class="bx bxl-github"></i> Github </a>
+              <a href="https://www.linkedin.com/in/walidamriou/" target=”_blank” role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary" style="background-color: blue;margin: 10px;">
+                <i class="bx bxl-linkedin"></i> Linkedin</a>              
+              <a href="mailto: contact@walidamriou.com" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary" style="background-color: green;margin: 10px;">
+                <i class="bx bxl-google"></i> Email</a>              
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer role="contentinfo" class="ui-section-footer" style="background-color: #c5edec;">
+      <div class="ui-layout-container">
+        <div class="ui-section-footer__layout ui-layout-flex">
+          <p class="ui-section-footer--copyright ui-text-note" style="color: #1b1a1b;"><small>&copy; 2023 Walid Amriou</small></p>
+
+          <nav role="navigation" class="ui-section-footer--nav ui-section-footer--social ui-layout-flex">
+
+          </nav>
+
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
