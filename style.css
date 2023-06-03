@@ -214,7 +214,10 @@ svg {
 
 .ui-layout-flex { display: flex; }
 
+/*
 .ui-layout-grid { display: grid; }
+*/
+.ui-layout-grid { display: initial; margin: 20px;padding: 20px;}
 
 /*--------------------------------------------------------------
 6.0 COMPONENT
