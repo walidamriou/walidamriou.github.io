@@ -1,11 +1,268 @@
-<!DOCTYPE html>
+<!--
+ @File index.html
+ @Author Walid Amriou
+ @Date 21/08/2024
+ @Description This file contains the main webpage of Walid Amriou Personal Website www.walidamriou.com
+ 
+
+                                        =                                
+                                +++++++++++++++++                        
+                             +++++*************+++++                     
+                           ++++*******************++++                   
+                         +++#******###########******#+++                 
+                        +++*****#####+++++++#####*****+++                
+                       +++****####+++++++++++++####****+++               
+                      +++****###++++@@@@@@@@@++++###****+++              
+                      ++****###+++@@@@@@@@@@@@@+++###****++              
+                     +++****##+++@@@@@@@@@@@@@@@+++##****+++             
+                     +++***###+++@@@@@@@@@@@@@@@+++###***+++             
+                     +++***###+++@@@@@@@@@@@@@@@+++###***+++             
+                     +++****##+++@@@@@@@@@@@@@@@+++###***+++             
+                      ++****###+++@@@@@@@@@@@@@++++###***+++             
+                      +++****###++++@@@@@@@@@++++++###***+++             
+                       +++****####+++++++++++++##++###***+++             
+                        +++*****#####*+++++*#####++###***+++             
+                         =+++******###########***++###***+++             
+                           ++++******************++###***+++             
+                             =+++++***********+++++###***+++             
+                                 +++++++++++++++ ++###***+++             
+                                                 ++###***+++             
+                                                 ++###***+++             
+                                                 ++###***+++             
+                                                 ++###***+++             
+                                                 ++###***+++             
+                                                 ++###***+++             
+                                                 ++###***+++             
+                                                 ++###***+=+              
+                                            
+-->
+
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <meta name="robots" content="noindex, noarchive, nofollow">
+    <!-- Prevent search engines from indexing and following links on this page -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Set the character encoding to UTF-8 -->
+	<meta charset="utf-8">   
+    <!-- Configure the viewport for responsive design by sets the width of the viewport to be equal to the device 
+         width and  the initial zoom level when the page is first loaded to 1.0-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!--  Description of the web page that used by search engines to display a summary or snippet of information 
+        about the webpage in search results. -->
+    <meta name="description" content="Walid Amriou Website">
+    <meta name="author" content="walidamriou">
+    <title>Walid Amriou</title>
+    <link rel="icon" href="../assets/img/icon/favicon.ico" sizes="any">
+
+    <!--  Add Roboto Mono from Google font using "Link" to downloads the font file while rendering the rest of the page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+    body{
+        /* Set "Roboto Mono" as font style for all the elements if available; otherwise, a monospace font will be used. */
+        font-family: 'Roboto Mono', monospace; 
+        /* Set the transparency of all elements to 80% So that the colors do not appear too sharp */
+        opacity:0.8;
+        /* normalize/reset CSS of body margin and padding */
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    /* Default image width */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Logo in Small screens */
+    @media only screen and (max-width: 600px) {
+        .logo-small-width {
+            width: 50%; /* Set the width you want for small screens */
+            height: auto;
+        }
+        .txt-small-width {
+            padding-left: 5%;
+        }
+    }
+
+    /* Logo in Medium screens */
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        .logo-medium-width {
+            width: 25%; /* Set the width you want for medium screens */
+            height: auto;
+        }
+        .txt-medium-width {
+            padding-left: 10%;
+        }
+    }
+
+    /* Logo in Large screens */
+    @media only screen and (min-width: 1025px) {
+        .logo-large-width {
+            width: 18%; /* Set the width you want for large screens and above */
+            height: auto;
+        }
+        .txt-large-width {
+            padding-left: 20%;
+        }
+    }
+    footer {
+      padding: 4%;
+      background-color: #000; 
+      color:#fff
+    }
+
+    </style>
 </head>
-<body style="background-color: #181818;">
+<body>
+    <header>
+        <div style="text-align: center;margin-top: 10%;margin-bottom: 10%;" >
+            <h1 style="font-size: 2.5rem;font-weight: 700;">WALID AMRIOU</h1>
+            <h3 style="font-size: 1.3rem;font-weight: 400;">Embedded Systems & Software Developer</h3>
+        </div>
+    </header> 
+    <nav></nav>
+    
+    <!-- About -->
+    <section style="text-align: left;padding-top: 5%;padding-bottom: 5%;background-color: #CDFBE4;" class="txt-small-width txt-medium-width txt-large-width">
+        <h1 style="font-size: 2.5rem;">About</h1>
+        <div style="width: 80%;">
+            <h5 style="font-size: 1.4375rem;font-weight: 300;">
+                <b style="color: #1D6AAB;">Software</b> and <b style="color: #1D6AAB;">Embedded Systems Developer</b>.
+                I possess strong expertise in Software, Firmware, IoT, and Electronics, with experience in product 
+                development across Home Appliances, Solar Energy, IoT Gateways, and B2B solutions.
+                Holding a Master’s in Embedded Systems and a Bachelor's in Electronics, which gave me deep 
+                understanding of Software and Hardware across various platforms.
+            </h5>
+        </div>
+    </section>
+
+     <!-- Skills -->
+    <section style="text-align: left;padding-top: 5%;padding-bottom: 5%;background-color: #F5F5F5;" class="txt-small-width txt-medium-width txt-large-width">
+        <h1 style="font-size: 2.5rem;">Skills</h1>
+        <div style="width: 80%;">
+            <h5 style="font-size: 1.4375rem;font-weight: 300;line-height:1.8;">
+                <ul>
+                    <li><b style="color: #F5F5F5;background-color: #00065e;border-radius: 15px;padding: 5px;">Embedded Systems and Firmware Development</b>
+                        Design, Development, and Optimization across various Platforms and Architectures (ESP32, ARM, STM32, Microchip and others).
+                    </li>
+                    <li><b style="color: #F5F5F5;background-color: #2000c1;border-radius: 15px;padding: 5px;">Software Development</b>
+                        Proficient in C/C++, Python, NodeJS, ElectronJS, Java, and other languages.
+                    </li>
+                    <li><b style="color: #F5F5F5;background-color: #c10000;border-radius: 15px;padding: 5px;">IoT Solutions</b>
+                        Development and Integration of IoT devices and Gateways across various platforms and protocols (MQTT, HTTPS, UDP, Wi-Fi, Bluetooth, BLE, etc.).
+                    </li>
+                    <li><b style="color: #F5F5F5;background-color: #2d8800;border-radius: 15px;padding: 5px;">Embedded Linux</b>
+                        Development and Customization of Linux-based Systems for Embedded Applications.
+                    </li>
+                    <li><b style="color: #F5F5F5;background-color: #9d004c;border-radius: 15px;padding: 5px;">Electronics</b>
+                        Circuit Design, Analysis, and Testing.
+                    </li>
+                    <li><b style="color: #F5F5F5;background-color: #364f00;border-radius: 15px;padding: 5px;">Web & Desktop Applications</b>
+                        Experience with a focus on creating robust and scalable applications.
+                    </li>
+                    <li><b style="color: #F5F5F5;background-color: #00725f;border-radius: 15px;padding: 5px;">Design & Technical Documentation</b>
+                        Expertise in creating Detailed Design Documents, Technical Specifications, and User Manuals.
+                    </li>
+                </ul>
+            </h5>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section style="text-align: left;padding-top: 5%;padding-bottom: 5%;background-color: #D0F5FF;" class="txt-small-width txt-medium-width txt-large-width">
+        <h1 style="font-size: 2.5rem;">Work Experience</h1><h2>with Companies and Teams</h2>
+        <div style="width: 80%;">
+            <h5 style="font-size: 1.4375rem;font-weight: 300;">
+                <ul>
+                    <li style="margin: 2%;">
+                        <b style="color: #F5F5F5;background-color: #000000;border-radius: 15px;padding: 5px;">Solarnative GmbH</b>
+                        2022 to present<br>
+                        Embedded systems & Software developer<br>
+                        To create total independent energy system for people<br>
+                    </li>
+                    <li style="margin: 2%;">
+                        <b style="color: #F5F5F5;background-color: #e70000;border-radius: 15px;padding: 5px;">Brandt</b>
+                        2020 to 2022<br>
+                        Embedded System Engineer<br>
+                        To create home appliances products<br>
+                    </li>
+                    <li style="margin: 2%;">
+                        <b style="color: #F5F5F5;background-color: #00a772;border-radius: 15px;padding: 5px;">Mookhtabar</b>                  
+                        2017 to 2020<br>
+                        Founder and Software Developer<br>
+                        Startup For B2B technology solutions<br>
+                    </li>
+
+                    <li style="margin: 2%;">
+                        <b style="color: #F5F5F5;background-color: #bf0000;border-radius: 15px;padding: 5px;">Mozilla Foundation</b>                  
+                        2015 to 2023<br>
+                        Contributor and Representative (Volunteer)<br>
+                    </li>
+
+                    <li style="margin: 2%;">
+                        <b style="color: #F5F5F5;background-color: #000abf;border-radius: 15px;padding: 5px;">Google Developer Groups</b>                  
+                        2013 to 2020<br>
+                        Organizer (Volunteer)<br>
+                    </li>
+                </ul>
+
+        
+            </h5>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section style="text-align: left;padding-top: 5%;padding-bottom: 5%;background-color: #ede4d9;" class="txt-small-width txt-medium-width txt-large-width">
+        <h1 style="font-size: 2.5rem;">Projects</h1>
+        <div style="width: 80%;">
+            <h5 style="font-size: 1.4375rem;font-weight: 300;line-height:1.8;">
+                Explore some of the best projects I've worked on and created.
+                <br><br><br>
+                <a href="./projects.html" target="”_blank”" role="link" style="color: #000000;background-color: #ffffff;border-radius: 20px;padding: 5px;border:.1rem solid #000;">My projects</a>
+            </h5>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section style="text-align: left;padding-top: 5%;padding-bottom: 5%;background-color: #D9EDDF;" class="txt-small-width txt-medium-width txt-large-width">
+        <h1 style="font-size: 2.5rem;">Blog</h1>
+        <div style="width: 80%;">
+            <h5 style="font-size: 1.4375rem;font-weight: 300;line-height:1.8;">
+                I am writing about Books I've read,Technology, Science, Arts, my philosophies, and more subjects in 
+                <b style="color: #ffffff;background-color: #000000;border-radius: 15px;padding: 5px;font-weight: 600;">Walid Blog</b>
+                <br><br><br>
+                <!-- <a href="/" target="”_blank”" role="link" style="color: #000000;background-color: #ffffff;border-radius: 20px;padding: 5px;border:.1rem solid #000;">
+                    Blog link here</a> -->
+            </h5>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section style="text-align: center;padding: 1%;background-color: #224a9a;color: #fff;">
+        <h1 style="font-size: 2.0rem;color: #fff;">Linkedin <a href="https://www.linkedin.com/in/walidamriou/" target="”_blank”" role="link" style="font-size: 1.5rem;color: #fff;background-color: #4267B2;border-radius: 20px;padding: 5px;border:.1rem solid #3c3c3c;">@walidamriou</a></h1>
+    </section>
+
+    <section style="text-align: center;padding: 1%;background-color: #cfdc00;color: #000;">
+        <h1 style="font-size: 2.0rem;color: #000;">Xing <a href="https://www.xing.com/profile/Walid_Amriou076788" target="”_blank”" role="link" style="font-size: 1.5rem;color: #000;background-color: #cfdc00;border-radius: 20px;padding: 5px;border:.1rem solid #000;">@walidamriou</a></h1>
+    </section>
+
+    <section style="text-align: center;padding: 1%;background-color: #161616;color: #fff;">
+        <h1 style="font-size: 2.0rem;color: #fff;">Github <a href="https://github.com/walidamriou" target="”_blank”" role="link" style="font-size: 1.5rem;color: #fff;background-color: #1F1F1F;border-radius: 20px;padding: 5px;border:.1rem solid #3c3c3c;">@walidamriou</a></h1>
+    </section>
+    <section style="text-align: center;padding: 1%;background-color: #6eefae;color: #fff;">
+        <h1 style="font-size: 2.0rem;color: #000;">Email <a href="mailto: " target="”_blank”" role="link" style="font-size: 1.5rem;color: #000000;background-color: #6eefae;border-radius: 20px;padding: 5px;border:.1rem solid #3c3c3c;">hello [at] waliamriou.com</a></h1>
+        </div>
+    </section>
+    
+<footer>
+    <p>The Personal Website of Walid Amriou</p>
+    <a target="”_blank”" role="link" href="./privacy.html" style="font-size: smaller;color: #00BF81;" >Privacy Policy</a>
+</footer>
 </body>
 </html>
