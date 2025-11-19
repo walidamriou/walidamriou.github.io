@@ -2,54 +2,88 @@
 <html lang="en">
 <head>
     <meta name="robots" content="noindex, nofollow">
-	<meta charset="utf-8">   
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta charset="utf-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta name="description" content="Walid Amriou Website">
     <meta name="author" content="walidamriou">
     <title>Walid A.</title>
     <link rel="icon" href="../assets/img/icon/favicon.ico" sizes="any">
     <style>
-    body{
-        font-family: monospace; 
-        opacity:0.8;
-        margin: 0;
-        padding: 0;
-    }
-    a{
-        text-decoration: none;
-    }
-    footer {
-      padding: 4%;
-      background-color: #000; 
-      color:#fff
-    }
+        html, body {
+            background-color: #f5f5f5;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: monospace;
+            opacity: 0.9;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* centers vertically */
+        }
+
+        footer {
+            padding: 4%;
+            background-color: #000; 
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            padding: 4%;
+            text-align: center;
+            margin-bottom: 5%;
+            margin-top:5%
+        }
+
+        section {
+            text-align: center;
+            padding: 1%;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div style="text-align: center;margin-top: 10%;margin-bottom: 10%;" >
-            <h1 style="font-size: 2.5rem;font-weight: 700;">WALID A.</h1>
-            <h3 style="font-size: 1.3rem;font-weight: 400;">Embedded Systems & Software Developer</h3>
+    <main>
+        <header>
+            <h1 style="font-size: 2.5rem; font-weight: 700;">WALID A.</h1>
+            <h3 style="font-size: 1.3rem; font-weight: 400;">Embedded Systems & Software Developer</h3>
             <br>
-            <a href="./about.html" target="”_blank”" role="link" style="color: #fff;background-color: #2f4858;border-radius: 20px;padding: 10px;border:.1rem solid #000;font-size: 20px;margin: 10px;">About me</a>
-            <a href="/" target="”_blank”" role="link" style="color: #fff;background-color: #000000;border-radius: 20px;padding: 10px;border:.1rem solid #000;font-size: 20px;margin: 10px;">WALID Notes</a>
+            <a href="./about.html" target="_blank" role="link" style="color: #fff; background-color: #2f4858; border-radius: 20px; padding: 10px; border:.1rem solid #000; font-size: 20px; margin: 10px;">About me</a>
+            <a href="https://notes.walidamriou.com/" target="_blank" role="link" style="color: #fff; background-color: #000000; border-radius: 20px; padding: 10px; border:.1rem solid #000; font-size: 20px; margin: 10px;">WALID Notes</a>
+        </header>
+
+        <div style="margin-top: auto;">
+            <section style="background-color: #161616; color: #fff;">
+                <h1 style="font-size: 2.0rem; color: #fff;">
+                    Github 
+                    <a href="https://github.com/walidamriou" target="_blank" role="link" style="font-size: 1.5rem; color: #fff; background-color: #1F1F1F; border-radius: 20px; padding: 5px; border: .1rem solid #3c3c3c;">
+                        @walidamriou
+                    </a>
+                </h1>
+            </section>
+
+            <section style="background-color: #6eefae; color: #000;">
+                <h1 style="font-size: 2.0rem; color: #000;">
+                    Email 
+                    <a href="mailto:hello@walidamriou.com" target="_blank" role="link" style="font-size: 1.5rem; color: #000000; background-color: #6eefae; border-radius: 20px; padding: 5px; border:.1rem solid #3c3c3c;">
+                        hello [at] walidamriou.com
+                    </a>
+                </h1>
+            </section>
         </div>
-    </header> 
-    <nav></nav>
-    <!-- Contact -->
-    <!-- <section style="text-align: center;padding: 1%;background-color: #224a9a;color: #fff;">
-        <h1 style="font-size: 2.0rem;color: #fff;">Linkedin <a href="https://www.linkedin.com/in/walidamriou/" target="”_blank”" role="link" style="font-size: 1.5rem;color: #fff;background-color: #4267B2;border-radius: 20px;padding: 5px;border:.1rem solid #3c3c3c;">@walidamriou</a></h1>
-    </section>
-    <section style="text-align: center;padding: 1%;background-color: #cfdc00;color: #000;">
-        <h1 style="font-size: 2.0rem;color: #000;">Xing <a href="https://www.xing.com/profile/Walid_Amriou076788" target="”_blank”" role="link" style="font-size: 1.5rem;color: #000;background-color: #cfdc00;border-radius: 20px;padding: 5px;border:.1rem solid #000;">@walidamriou</a></h1>
-    </section> -->
-    <section style="text-align: center;padding: 1%;background-color: #161616;color: #fff;">
-        <h1 style="font-size: 2.0rem;color: #fff;">Github <a href="https://github.com/walidamriou" target="”_blank”" role="link" style="font-size: 1.5rem;color: #fff;background-color: #1F1F1F;border-radius: 20px;padding: 5px;border:.1rem solid #3c3c3c;">@walidamriou</a></h1>
-    </section>
-    <section style="text-align: center;padding: 1%;background-color: #6eefae;color: #fff;">
-        <h1 style="font-size: 2.0rem;color: #000;">Email <a href="mailto: " target="”_blank”" role="link" style="font-size: 1.5rem;color: #000000;background-color: #6eefae;border-radius: 20px;padding: 5px;border:.1rem solid #3c3c3c;">hello [at] walidamriou.com</a></h1>
-        </div>
-    </section>
-<footer><p>The Personal Website of Walid A © 2025</p></footer>
+    </main>
+
+    <footer>
+        <p>The Personal Website of Walid A © 2025</p>
+    </footer>
 </body>
 </html>
