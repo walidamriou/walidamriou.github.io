@@ -1,15 +1,21 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta name="robots" content="noindex, nofollow">
-    <meta charset="utf-8">   
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="description" content="Walid Amriou Website">
     <meta name="author" content="walidamriou">
-    <title>Walid A.</title>
+
+    <title>Walid Amriou</title>
+
     <link rel="icon" href="../assets/img/icon/favicon.ico" sizes="any">
+
     <style>
-        html, body {
+        html,
+        body {
             background-color: #f5f5f5;
             height: 100%;
             margin: 0;
@@ -20,20 +26,17 @@
             opacity: 0.9;
         }
 
-        a {
-            text-decoration: none;
-        }
-
         main {
             flex: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* centers vertically */
+            justify-content: center;
+            /* centers vertically */
         }
 
         footer {
             padding: 4%;
-            background-color: #000; 
+            background-color: #000;
             color: #fff;
             text-align: center;
         }
@@ -42,58 +45,243 @@
             padding: 4%;
             text-align: center;
             margin-bottom: 5%;
-            margin-top:5%
+            margin-top: 5%;
         }
 
         section {
             text-align: center;
             padding: 1%;
         }
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
+            padding-bottom: 0;
+        }
+
+        .card {
+            position: relative;
+            padding: 30px;
+            transition: transform .3s ease;
+            padding-top: 6px
+        }
+
+        .github {
+            z-index: 1;
+            background: #161616;
+            color: white;
+        }
+
+        .email {
+            z-index: 2;
+            background: #ba8bea;
+            color: black;
+        }
+
+        .linkedin {
+            z-index: 3;
+            background: #002baa;
+            color: white;
+        }
+
+        .instagram {
+            z-index: 4;
+            background: #c13584;
+            color: white;
+            padding-bottom: 0;
+        }
+
+        .info {
+            z-index: 5;
+            background: #1F1F1F;
+            padding: 4%;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        .card:not(:first-child) {
+            margin-top: -25px;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            animation: pageIn .6s ease;
+        }
+
+        body.fade-out {
+            animation: pageOut .6s ease forwards;
+            background-color: #fff9e8;
+        }
+
+        @keyframes pageOut {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+                background-color: #fff9e8;
+            }
+
+            to {
+                opacity: 0;
+                transform: translateY(-80px);
+                background-color: #fff9e8;
+            }
+        }
+
+        .main-btn {
+            display: inline-block;
+            color: #161616;
+            border-radius: 20px;
+            padding: 12px 18px;
+            border: .1rem solid #000;
+            font-size: 20px;
+            margin: 10px;
+            text-decoration: none;
+
+            position: relative;
+            transition:
+                transform .25s ease,
+                box-shadow .25s ease,
+                filter .25s ease;
+
+            box-shadow:
+                0 4px 10px rgba(0, 0, 0, .08);
+        }
+
+        .about-btn {
+            background-color: #ffdc80;
+        }
+
+        .blog-btn {
+            background-color: #80ffcc;
+        }
+
+        .main-btn:hover {
+            transform: translateY(-4px) scale(1.03);
+
+            box-shadow:
+                0 12px 30px rgba(0, 0, 0, .22),
+                0 0 25px rgba(255, 255, 255, .25);
+
+            filter: brightness(1.03);
+        }
+
+        .main-btn:active {
+            transform: translateY(0px) scale(.98);
+        }
     </style>
 </head>
+
 <body>
-    <main>
+
+    <dic>
+
         <header>
-            <h1 style="font-size: 2.5rem; font-weight: 700;">WALID A.</h1>
-            <h3 style="font-size: 1.3rem; font-weight: 400;">Embedded Systems & Software Developer</h3>
+            <h1 style="font-size: 2.5rem; font-weight: 700;">
+                WALID AMRIOU
+            </h1>
+
+            <h3 style="font-size: 1.3rem; font-weight: 400;">
+                Embedded Systems, Hardware, and Software Developer
+            </h3>
+
             <br>
-            <a href="./about.html" target="_blank" role="link" style="color: #fff; background-color: #2f4858; border-radius: 20px; padding: 10px; border:.1rem solid #000; font-size: 20px; margin: 10px;">About me</a>
-            <a href="https://notes.walidamriou.com/" target="_blank" role="link" style="color: #fff; background-color: #000000; border-radius: 20px; padding: 10px; border:.1rem solid #000; font-size: 20px; margin: 10px;">WALID Notes</a>
+
+            <a href="./about.html" class="main-btn about-btn" target="_blank" role="link">
+                About me
+            </a>
+
+            <a href="https://notes.walidamriou.com" class="main-btn blog-btn" target="_blank" role="link">
+                WALID NOTES
+            </a>
+
         </header>
 
-        <div style="margin-top: auto;">
-            <section style="background-color: #161616; color: #fff;">
-                <h1 style="font-size: 2.0rem; color: #fff;">
-                    Github 
-                    <a href="https://github.com/walidamriou" target="_blank" role="link" style="font-size: 1.5rem; color: #fff; background-color: #1F1F1F; border-radius: 20px; padding: 5px; border: .1rem solid #3c3c3c;">
+        <div class="contacts" style="background-color: #c13584;">
+            <section class="card github">
+                <h1>
+                    Github
+
+                    <a href="https://github.com/walidamriou" target="_blank" role="link"
+                        style="font-size: 1.5rem; color: #fff; background-color: #1F1F1F; border-radius: 20px; padding: 5px; border: .1rem solid #3c3c3c;">
                         @walidamriou
                     </a>
                 </h1>
             </section>
 
-            <section style="background-color: #6eefae; color: #000;">
-                <h1 style="font-size: 2.0rem; color: #000;">
-                    Email 
-                    <a href="mailto:hello@walidamriou.com" target="_blank" role="link" style="font-size: 1.5rem; color: #000000; background-color: #6eefae; border-radius: 20px; padding: 5px; border:.1rem solid #3c3c3c;">
+            <section class="card email">
+                <h1>
+                    Email
+
+                    <a href="mailto:hello@walidamriou.com" target="_blank" role="link"
+                        style="font-size: 1.5rem; color: #000000; background-color: #ba8bea; border-radius: 20px; padding: 5px; border:.1rem solid #3c3c3c;">
                         hello [at] walidamriou.com
                     </a>
                 </h1>
             </section>
 
-             <section style="background-color: #002baa; color: #fff;">
-                <h1 style="font-size: 2.0rem; color: #fff;">
-                    Linkedin 
-                    <a href="https://www.linkedin.com/in/walidamriou/" target="_blank" role="link" style="font-size: 1.5rem; color: #fff; background-color: #002baa; border-radius: 20px; padding: 5px; border:.1rem solid #3c3c3c;">
+            <section class="card linkedin">
+                <h1>
+                    Linkedin
+
+                    <a href="https://www.linkedin.com/in/walidamriou/" target="_blank" role="link"
+                        style="font-size: 1.5rem; color: #fff; background-color: #002baa; border-radius: 20px; padding: 5px; border:.1rem solid #3c3c3c;">
                         @walidamriou
                     </a>
                 </h1>
             </section>
 
-        </div>
-    </main>
+            <section class="card instagram">
+                <h1>
+                    Instagram
 
-    <footer>
-        <p>The Personal Website of Walid A © 2025</p>
-    </footer>
+                    <a href="https://www.instagram.com/57414c4944/" target="_blank" role="link"
+                        style="font-size: 1.5rem; color: #fff; background-color: #c13584; border-radius: 20px; padding: 5px; border:.1rem solid #3c3c3c;">
+                        @57414c4944
+                    </a>
+                </h1>
+            </section>
+
+        </div>
+
+        </main>
+
+        <footer class="info">
+            <p>
+                The Personal Website of Walid Amriou © 2026
+            </p>
+        </footer>
+
+        <script>
+            document.querySelector(".about-btn").addEventListener("click", function (e) {
+                e.preventDefault();
+
+                document.body.classList.add("fade-out");
+
+                setTimeout(() => {
+                    window.location.href = this.href;
+                }, 500);
+            });
+
+            document.querySelector(".blog-btn").addEventListener("click", function (e) {
+                e.preventDefault();
+
+                document.body.classList.add("fade-out");
+
+                setTimeout(() => {
+                    window.location.href = this.href;
+                }, 500);
+            });    
+        </script>
+
 </body>
+
 </html>
