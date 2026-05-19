@@ -136,6 +136,20 @@
             }
         }
 
+        @keyframes pageIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+                background-color: #fff9e8;
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+                background-color: #f5f5f5;
+            }
+        }
+
         .main-btn {
             display: inline-block;
             color: #161616;
@@ -182,7 +196,7 @@
 
 <body>
 
-    <dic>
+    <div>
 
         <header>
             <h1 style="font-size: 2.5rem; font-weight: 700;">
@@ -195,16 +209,16 @@
 
             <br>
 
-            <a href="./about.html" class="main-btn about-btn" target="_blank" role="link">
+            <a href="./about.html" class="main-btn about-btn" role="link">
                 About me
             </a>
 
-            <a href="https://notes.walidamriou.com" class="main-btn blog-btn" target="_blank" role="link">
+            <a href="https://notes.walidamriou.com" class="main-btn blog-btn" role="link">
                 WALID NOTES
             </a>
 
         </header>
-
+        <main>
         <div class="contacts" style="background-color: #c13584;">
             <section class="card github">
                 <h1>
@@ -280,7 +294,18 @@
                     window.location.href = this.href;
                 }, 500);
             });    
+
+                    window.addEventListener("pageshow", function () {
+                        document.body.classList.remove("fade-out");
+
+                        document.body.style.animation = "none";
+                        void document.body.offsetWidth;
+                        document.body.style.animation = "pageIn .6s ease";
+                    });
+
         </script>
+
+
 
 </body>
 
